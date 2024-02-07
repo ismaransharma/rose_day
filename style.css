@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  overflow: hidden;
+}
+
+.hero {
+  display: flex;
+  min-height: 85vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+}
+
+h1 {
+  color: #e53935;
+}
+
+p {
+  color: #333;
+}
+
+#rose-img {
+  width: 200px;
+  height: auto;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #e53935;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #c62828;
+}
+
+.rose-leaf {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-image: url("rose_bg.png");
+  background-size: cover;
+  border-radius: 50%;
+  animation: fall 5s linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100px) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
